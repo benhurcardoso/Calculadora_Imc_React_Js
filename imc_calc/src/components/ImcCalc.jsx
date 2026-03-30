@@ -41,7 +41,7 @@ const ImcCalc = ({ calcImc }) => {
             <label htmlFor="height">Altura:</label>
             <input type="text" name="height" id="height" placeholder="Exemplo 1,75"
             onChange={(e) => handleHeightChange(e)}
-            value={height} />
+            value={height} maxLength={4} />
             
           </div>
 
@@ -53,7 +53,7 @@ const ImcCalc = ({ calcImc }) => {
             <label htmlFor="weight">Peso:</label>
             <input type="text" name="weight" id="weight" placeholder="Exemplo 70.5"
              onChange={(e) => handleWeightChange(e)}
-             value={weight} />
+             value={weight} maxLength={5} />
             
           </div>
 
